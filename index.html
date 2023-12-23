@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./img/logo.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>PN KFC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="loadData()">
+  <!-- Header  -->
+  <header>
+    <a href="./index.html"><img src="./img/logo.png" class="logo" alt="pictur
+      e" /></a>
+    <!-- Nav -->
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./page/shop.html">Product</a></li>
+        <li><a href="./page/blog.html">Blog</a></li>
+        <li><a href="./page/about.html">About</a></li>
+        <li><a href="./page/contact.html">Contact</a></li>
+        <li>
+          <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search" />
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="cart-icon">
+            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+              <span id="lg-bag" class="cart-number">0</span></a>
+          </div>
+          <div id="showcart">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Money ($)</th>
+                <th>Delete </th>
+              </tr>
+              <tbody id="mycart"></tbody>
+            </table>
+            <br>
+            <a class="pay-btn" href="./page/paycart.html">Pay</a>
+            <button id="remove" onclick="removepr()">Remove</button>
+          </div>
+        </li>
+        <li>
+         
+          <a id="login" href="./page/login.html"><i class="fa-solid fa-user-tie"></i></a>
+        </li>
+        <i id="close-bar" class="fa-solid fa-xmark"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div id="lg-bag-2" class="cart-icon">
+        <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-number">0</span></a>
+      </div>
+      <i id="bar" class="fa-solid fa-list"></i>
+    </div>
+    <!-- End Nav  -->
+  </header>
+  <!-- End Header  -->
+
+  
+
+
+  <!-- Home slider  -->
+  <section class="home">
+    <img class="img-slide active" src="./img/slider/slider1.jpg" autoplay muted loop></img>
+    <img class="img-slide" src="./img/slider/slider2.jpg" autoplay muted loop></img>
+    <img class="img-slide" src="./img/slider/slider3.jpg" autoplay muted loop></img>
+    <img class="img-slide" src="./img/slider/slider4.jpg" autoplay muted loop></img>
+
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+  <!-- End Home silder  -->
+
+  
+
+  <!-- Product list 1  -->
+  <section id="product1" class="section-p1">
+    <div class="the-main"><h2>The main products</h2>
+      <p>trending products</p></div>
+    
+    <div id="products-container">
+
+      <div class="product">
+        <div onclick="window.location.href='./page/sproduct1.html'" class="row img imgPr"><img
+            src="./img/products/productname1.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-50%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">PHU QUOC WHOLE BLACK PEPPERCORN </h4>
+        <input type="number" name="quantity" min="1" max="10" value="1" required />
+        <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+        <span class="freeship">Hot </span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+       
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div  onclick="window.location.href='./page/sproduct2.html'" class="row img imgPr"><img src="./img/products/combo1.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>9.540</span> $ </p>
+          <span class="price-standard"> 20.214 $ </span>
+          <span class="price-reduced">-55%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name"> COMBO ANISE CARDAMOM SPICE </h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+        <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+        <span class="freeship">Combo</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+
+     
+
+
+
+
+      <div class="product" >
+        <div onclick="window.location.href='./page/sproduct3.html'" class="row img imgPr"><img
+            src="./img/products/combo2.jpg" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>6.540</span> $ </p>
+          <span class="price-standard"> 12.214 $ </span>
+          <span class="price-reduced">-55%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name"> COMBO FOR VIETNAM LUNAR NEW YEAR </h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+        <button onclick="addtocart(this)"><span onclick="window.location.href='../page/paycart.html'">Buy
+            now</span></button>
+        <span class="freeship">Combo</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
+        <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div  onclick="window.location.href='./page/sproduct4.html'" class="row img imgPr"><img src="./img/products/productname4.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-50%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">NATURAL INSTANT SHRIMP PASTE</h4>
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">Hot </span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+          <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+      </div>
+      <div class="product">
+        <div  onclick="window.location.href='./page/sproduct4.html'"class="row img imgPr anhloi"><img src="./img/products/productname5.png" alt="" /></div>
+       
+
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-70%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">NATURAL SWEET & SOUR FISH SAUCE</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">Sale</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr anhloi"><img src="./img/products/productname6.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-70%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">KOREAN KIMCHI SALTED SAUCE NATURAL CINNAMON</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">Sale</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname7.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-70%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name"> NATURAL CINNAMON ANNATTO OIL</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+        <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">Sale</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname8.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span>1.040</span> $ </p>
+          <span class="price-standard"> 2.080 $ </span>
+          <span class="price-reduced">-70%</span>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">BIRD'S EYE GREEN CHILI PEPPER SHRIMP SATE SAUCE</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">Sale</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Product list 1  -->
+
+  <!-- Banner 2  -->
+  <section id="banner2" class="section-m1">
+    <h4>Press Corner</h4>
+    <h2>Dh Foods <span>Boss:</span>"I am no longer aggressive and eager to get rich quick like when I was young"</h2>
+
+
+   <a href="./page/blog.html"><button class="normal">Explore More</button></a> 
+  </section>
+  <!-- End Banner 2  -->
+
+  <!-- Product list 2  -->
+  <section id="product1" class="section-p1">
+    <div class="the-main">
+      <h2>New Product</h2>
+      <p>Some other options</p>
+    </div>
+    
+    <div id="products-container">
+
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname9.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span> 2.080 </span> $ </p>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">TAY NINH GREEN CHILI SALT MIXTURE</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">New</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname10.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span> 2.080 </span> $ </p>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">TAY NINH CHILI-FLAVORED SALT MIXTURE</h4>
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">New</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname11.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span> 2.080 </span> $ </p>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">GREEN CHILI PEPPER SAUCE NATURAL CINNAMON</h4>
+       
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">New</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="row img imgPr"><img src="./img/products/productname12.png" alt="" /></div>
+        <div class="price">
+          <p class="price-discount"><span> 2.080 </span> $ </p>
+        </div>
+        <h4 class="trademark">DH FOODS</h4>
+        <h4 class="name">KUMQUAT SAUCE NATURAL CINNAMON</h4>
+        
+        <input type="number" name="soluong" min="1" max="10" value="1" />
+          <button  onclick="addtocart(this)"><span onclick="window.location.href='./page/paycart.html'">Buy now</span></button>
+          <span class="freeship">New</span>
+        <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+         <div class="rating">
+          <span class="heard"><i class='bx bx-heart'></i></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Product list 2  -->
+
+  <!-- Banner buy  -->
+  <section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+     
+      <!-- <h4>crazy deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dress is on sale at Mix travel</span> -->
+      <a href="./page/blog.html"><button class="white">Learn More</button></a>
+    </div>
+    <div class="banner-box banner-box2">
+      <!-- <h4>spring/summer</h4>
+        
+        <h2>upcoming season</h2>
+        <span>The best classic dress is on sale at Mix travel</span> -->
+        <a href="./page/shop.html"><button class="white">Collection</button></a>
+    
+        
+    </div>
+  </section>
+  <!-- End Banner buy  -->
+
+  <!-- Banner 3  -->
+  <section id="banner3">
+    <div class="banner-box">
+      <!-- <h2>SEASONAL SALE</h2>
+        <h3>Best Collection -50% OFF</h3> -->
+        
+    </div>
+    <div class="banner-box banner-box2">
+      <!-- <h2>New backpack collection</h2>
+        <h3>Super Sale 2022</h3> -->
+    </div>
+    <div class="banner-box banner-box3">
+      <!-- <h2>Seasonal sale</h2>
+        <h3>Best Collection -70% OFF</h3> -->
+    </div>
+  </section>
+  <!-- End Banner 3  -->
+
+  <!-- Newsletter  -->
+   <!-- Newsletter  -->
+   <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Find Your Flavour</h4>
+      <p>
+        Join our mailing list and discover all the ways you can use our line of food flavours.
+
+        Plus receive fun and exciting recipes updates on product and access to exclusive savings.
+        <span>Special offers !</span>
+      </p>
+    </div>
+    
+      <div class="form">
+        <input type="text" name="" id="" placeholder="Your email address" />
+        <button class="sign up">Sign Up</button>
+      </div>
+  
+  </section>
+  <!-- End Newsletter  -->
+  <!-- End Newsletter  -->
+
+  <!-- footer  -->
+  <section id="footer">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img class="logoo" src="./img/logofooter.png" alt="" /></a>
+        <p class="gtlogo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Contact An Account Exec</p>
+        <p>Request a Sample</p>
+        <p>Technology & Innovation</p>
+        <p class="email-id">npcontact@npflavors.com</p>
+        <h4>+84 - 544655***</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Learn More
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul class="link-shop">
+          <li><a class="active" href="./index.html">Home</a></li>
+          <li><a href="./page/shop.html">Shop</a></li>
+          <li><a href="./page/blog.html">Blog</a></li>
+          <li><a href="./page/about.html">About</a></li>
+          <li><a href="./page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Socials
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
+  </section>
+  <!-- end footer  -->
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/product.js"></script>
+
+</html>

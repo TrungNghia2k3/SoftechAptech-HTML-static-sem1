@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/paycart.css" />
+    <title>PN KFC | Paycart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body >
+    <!-- Header  -->
+    <header>
+      <a href="../index.html"><img src="../img/logo.png" class="logo" alt="picture" /></a>
+      <!-- Nav -->
+      <div>
+        <ul id="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a  href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+          <li>
+            <div class="search-box">
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Type to search"
+              />
+              <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="cart-icon">
+              <p onclick="showcart()"
+                ><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+                <span id="lg-bag" class="cart-number">0</span></a
+              >
+            </div>
+            <div id="showcart">
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal ($)</th>
+                  <th>Delete</th>
+                </tr>
+                <tbody id="mycart"></tbody>
+              </table>
+            </div>
+          </li>
+          <i id="close-bar" class="fa-solid fa-xmark"></i>
+        </ul>
+      </div>
+      <div id="mobile">
+        <div class="cart-icon">
+          <p onclick="showcart()"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-number">0</span></a
+          >
+        </div>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+      <!-- End Nav  -->
+    </header>
+    <!-- End Header  -->
+
+    <!-- Banner  -->
+    
+    <!-- End Banner  -->
+    <!-- pay cart  -->
+    <div class="cart-pay">
+      <div class="box-cart">
+          <div class="box-cart-1">
+            <h1>Your Cart</h1>
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal ($)</th>
+                <th>Delete</th>
+              </tr>
+              <tbody id="payCart">
+              </tbody>
+              
+            </table>     
+            <br>
+            <button id="remove" onclick="removepr()">Remove</button>     
+          </div>
+          <a id="login" href="../page/login.html"><i class="fa-solid fa-user-tie"></i>Login</a>
+          <div class="box-cart-2">
+            <form action="">
+                <div class="row">       
+                    <div id="infomation-checkout" class="col">        
+                        <h3 class="title">Billing address</h3>       
+                        <div class="inputBox">
+                            <span>Full name :</span>
+                            <input type="text" placeholder="john deo">
+                        </div>
+                        <div class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>Address :</span>
+                            <input type="text" placeholder="room - street - locality">
+                        </div>
+                        <div class="inputBox">
+                            <span>City :</span>
+                            <input type="text" placeholder="mumbai">
+                        </div>
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>State :</span>
+                                <input type="text" placeholder="india">
+                            </div>
+                            <div class="inputBox">
+                                <span>Telephone :</span>
+                                <input type="tel" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+        
+                       
+                </div>       
+                <button type="submit" value="Proceed to checkout" class="submit-btn" onclick="checkout()">Process to success</button>
+            </form>
+        </div>    
+        </div>
+      </div>
+    </div>
+    <!-- end pay cart  -->
+
+   
+    <!-- reassurance about  -->
+
+    <!-- footer  -->
+  <section id="footer">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img class="logoo" src="../img/logofooter.png" alt="" /></a>
+        <p class="gtlogo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Contact An Account Exec</p>
+        <p>Request a Sample</p>
+        <p>Technology & Innovation</p>
+        <p class="email-id">npcontact@npflavors.com</p>
+        <h4>+84 - 544655***</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Learn More
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul class="link-shop">
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Socials
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
+  </section>
+    <!-- end footer  -->
+  </body>
+  <script src="../js/product.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    showpaycart();
+    showcountsp();
+  </script>
+</html>

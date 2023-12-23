@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="../img/logo.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>PN KFC | About Us </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Header  -->
+  <header>
+    <a href="../index.html"><img src="../img/logo.png" class="logo" alt="picture" /></a>
+    <!-- Nav -->
+    <div>
+      <ul id="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../page/shop.html">Shop</a></li>
+        <li><a href="../page/blog.html">Blog</a></li>
+        <li><a class="active" href="../page/about.html">About</a></li>
+        <li><a href="../page/contact.html">Contact</a></li>
+        <li>
+          <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search" />
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="cart-icon">
+            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+              <span id="lg-bag" class="cart-number">0</span></a>
+          </div>
+          <div id="showcart">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Money ($)</th>
+                <th>Delete</th>
+              </tr>
+              <tbody id="mycart"></tbody>
+            </table>
+            <br />
+            <a class="pay-btn" href="../page/paycart.html">Pay</a>
+            <button id="remove" onclick="removepr()">Remove</button>
+          </div>
+        </li>
+
+        <li>
+          <a id="login" href="../page/login.html"><i class="fa-solid fa-user-tie"></i></a>
+        </li>
+        <i id="close-bar" class="fa-solid fa-xmark"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div class="cart-icon">
+        <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-number">0</span></a>
+      </div>
+      <i id="bar" class="fa-solid fa-list"></i>
+    </div>
+    <!-- End Nav  -->
+  </header>
+
+  <div class="about-header">
+    <img src="../img/about/B1.jpg" width="100%" alt="picture" />
+    <div class="about-banner">
+      <h1>About Us.</h1>
+      <h3>grocery store</h3>
+      <div class="newslatter">
+        <form>
+          <input class="input-about" type="text" name="" id="" placeholder="What do you want to buy?" />
+          <input class="input-about" type="submit" value="Search" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End banner  -->
+
+  <!-- Shop introduction -->
+  <div class="about">
+    <div class="about-main">
+      <div class="about-img">
+        <img src="../img/about/B3.jpg" alt="picture" />
+      </div>
+      <div class="about-text">
+        <h2>WE HAVE THE BEST SPICE SUPPLY</h2>
+        <p>
+          The shop was founded by 3 team members. Shop specializing in spices. We can give you helpful tips about your
+          meal.
+        </p>
+        <button type="button"><span>See More</span></button>
+      </div>
+    </div>
+  </div>
+  <!-- End Shop introduction  -->
+
+  <!-- reassurance about -->
+
+  <!-- reassurance about  -->
+
+  <!-- support about -->
+  <div class="support-me">
+    <p>Do you need any help ?</p>
+    <a href="#" class="button-two">Support</a>
+  </div>
+  <!-- End support about  -->
+
+  <!--Flow me  -->
+  <div class="folow-me">
+    <p>PN Fooods</p>
+    <p>
+      Let us bring you the best experience when visiting the shop, please
+      click the icon below to follow our shop
+    </p>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </div>
+  <!-- End flow me  -->
+
+  <!-- footer  -->
+  <div id="footer">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img class="logoo" src="../img/logofooter.png" alt="" /></a>
+        <p class="gtlogo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Contact An Account Exec</p>
+        <p>Request a Sample</p>
+        <p>Technology & Innovation</p>
+        <p class="email-id">npcontact@npflavors.com</p>
+        <h4>+84 - 544655***</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Learn More
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul class="link-shop">
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Socials
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
+  </div>
+  <!-- end footer  -->
+</body>
+<script src="../js/main.js"></script>
+<script src="../js/product.js"></script>
+
+</html>

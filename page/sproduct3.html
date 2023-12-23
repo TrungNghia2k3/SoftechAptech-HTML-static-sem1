@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="../img/logo.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>PHU QUOC WHOLE BLACK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <a href="../index.html"><img src="../img/logo.png" class="logo" alt="picture" /></a>
+      <!-- Nav -->
+      <div>
+        <ul id="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+          <li>
+            <div class="search-box">
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Type to search"
+              />
+              <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </li>
+          <li > 
+            <div class="cart-icon">
+              <p onclick="showcart()"
+                ><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+                <span id="lg-bag" class="cart-number">0</span></a
+              >
+            </div>
+            <div id="showcart">
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Money ($)</th>
+                  <th>Delete </th>
+                </tr>
+                <tbody id="mycart"></tbody>
+              </table>
+              <br>
+              <a class="pay-btn" href="../page/paycart.html">Pay</a>
+              <button id="remove" onclick="removepr()">Remove</button>
+            </div>
+          </li>
+          <i id="close-bar" class="fa-solid fa-xmark"></i>
+        </ul>
+      </div>
+      <div id="mobile">
+        <div class="cart-icon">
+          <p onclick="showcart()"
+            ><i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-number">0</span></a
+          >
+        </div>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+      <!-- End Nav  -->
+    </header>
+    <!-- End Header  -->
+
+    <!-- Product detail  -->
+    <section id="products-details">
+      <div class="main-wrapper">
+        <div class="container">
+          <div class="product-div">
+            <div class="product-div-left">
+              <div class="img-container">
+                <img src="../img/products/combo2.jpg" alt="watch" />
+              </div>
+              <div class="hover-container">
+                <div><img src="../img/products/combo2.jpg" /></div>
+                <div><img src="../img/products/combo2.jpg" /></div>
+                <div><img src="../img/products/combo2.jpg" /></div>
+                <div><img src="../img/products/combo2.jpg" /></div>
+                <div><img src="../img/products/combo2.jpg" /></div>
+              </div>
+            </div>
+            <div class="product-div-right">
+              <div class="product-name">
+                <h5>PHU QUOC WHOLE BLACK PEPPERCORN - CERAMIC GRINDER</h5>
+                <p>Trademark:<span>DH FOODS</span></p>
+              </div>
+              <div class="product-price">
+                <span class="price-discount">$1.040</span>
+                <span class="price-standard">$2.080</span>
+                <span class="price-reduced">-50%</span>
+              </div>
+              <!-- <div class="product-select">
+                <select>
+                  <option selected>Select Size</option>
+                  <option value="1">20</option>
+                </select>
+              </div> -->
+             
+              <div class="content-details">
+                <p class="product-description">
+                  Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous.
+                </p>
+              </div>
+              <div class="btn-groups">
+                <button type="button" class="add-cart-btn">
+                  <i class="fas fa-shopping-cart"></i>add to cart
+                </button>
+                <button type="button" class="buy-now-btn">
+                  <i class="fas fa-wallet"></i>buy now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Product details  -->
+
+    <!-- Product list  -->
+    <section id="product1" class="section-p1">
+      <div class="the-main"><h2>The main products</h2>
+        <p>trending products</p></div>
+
+        <div id="filter_button">     
+          <a class="btn btn-primary active" data-filter="all">All</a>
+          <!-- <a class="btn btn-primary" data-filter="price">Price</a> -->
+          
+          <a class="btn btn-primary" data-filter="sale">Sale</a>
+          <a class="btn btn-primary" data-filter="hot">Hot</a>
+          <a class="btn btn-primary" data-filter="new">New</a>
+          <a class="btn btn-primary" data-filter="combo">Combo</a>
+     </div>
+      
+      <div id="products-container">
+  
+       
+
+        <div class="product" data-item="new">
+          <div onclick="window.location.href='/sproduct10.html'" class="row img imgPr"><img src="../img/products/productname9.png" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">TAY NINH GREEN CHILI SALT MIXTURE</h4>
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">New</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product" data-item="new">
+          <div class="row img imgPr"><img src="../img/products/productname10.png" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">TAY NINH CHILI-FLAVORED SALT MIXTURE</h4>
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">New</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product" data-item="new">
+          <div class="row img imgPr"><img src="../img/products/productname11.png" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">GREEN CHILI PEPPER SAUCE NATURAL CINNAMON</h4>
+         
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">New</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product" data-item="new">
+          <div class="row img imgPr"><img src="../img/products/productname12.png" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">KUMQUAT SAUCE NATURAL CINNAMON</h4>
+          
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">New</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+
+        <div class="product" data-item="combo">
+          <div class="row img imgPr"><img src="../img/products/combo1.png" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">TAY NINH GREEN CHILI SALT MIXTURE</h4>
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">Combo</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product"  data-item="combo">
+          <div class="row img imgPr"><img src="../img/products/combo2.jpg" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">TAY NINH CHILI-FLAVORED SALT MIXTURE</h4>
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">Combo</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product" data-item="combo">
+          <div class="row img imgPr"><img src="../img/products/combo3.jpg" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">GREEN CHILI PEPPER SAUCE NATURAL CINNAMON</h4>
+         
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">Combo</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+        <div class="product"  data-item="combo">
+          <div class="row img imgPr"><img src="../img/products/combo4.jpg" alt="" /></div>
+          <div class="price">
+            <p class="price-discount"><span> 2.080 </span> $ </p>
+          </div>
+          <h4 class="trademark">DH FOODS</h4>
+          <h4 class="name">KUMQUAT SAUCE NATURAL CINNAMON</h4>
+          
+          <input type="number" name="soluong" min="1" max="10" value="1" />
+            <button  onclick="addtocart(this)"><span onclick="window.location.href='paycart.html'">Buy now</span></button>
+            <span class="freeship">Combo</span>
+          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add' ></i></span>
+           <div class="rating">
+            <span class="heard"><i class='bx bx-heart'></i></span>
+          </div>
+        </div>
+      
+  
+      </div>
+    </section>
+    <!-- End Product list  -->
+
+   <!-- footer  -->
+   <section id="footer">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img class="logoo" src="../img/logofooter.png" alt="" /></a>
+        <p class="gtlogo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Contact An Account Exec</p>
+        <p>Request a Sample</p>
+        <p>Technology & Innovation</p>
+        <p class="email-id">npcontact@npflavors.com</p>
+        <h4>+84 - 544655***</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Learn More
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul class="link-shop">
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Socials
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
+  </section>
+    <script>
+      const allHoverImages = document.querySelectorAll(
+        ".hover-container div img"
+      );
+      const imgContainer = document.querySelector(".img-container");
+
+      window.addEventListener("DOMContentLoaded", () => {
+        allHoverImages[0].parentElement.classList.add("active");
+      });
+
+      allHoverImages.forEach((image) => {
+        image.addEventListener("mouseover", () => {
+          imgContainer.querySelector("img").src = image.src;
+          resetActiveImg();
+          image.parentElement.classList.add("active");
+        });
+      });
+
+      function resetActiveImg() {
+        allHoverImages.forEach((img) => {
+          img.parentElement.classList.remove("active");
+        });
+      }
+    </script>
+    <script src="../js/main.js"></script>
+    <script src="../js/product.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

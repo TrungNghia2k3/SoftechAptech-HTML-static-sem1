@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="../img/logo.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>PN KFC | Contact </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body >
+  <!-- Header  -->
+  <header>
+    <a href="../index.html"><img src="../img/logo.png" class="logo" alt="picture" /></a>
+    <!-- Nav -->
+    <div>
+      <ul id="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../page/shop.html">Product</a></li>
+        <li><a href="../page/blog.html">Blog</a></li>
+        <li><a href="../page/about.html">About</a></li>
+        <li><a class="active" href="../page/contact.html">Contact</a></li>
+        <li>
+          <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search" />
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="cart-icon">
+            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+              <span id="lg-bag" class="cart-number">0</span></a>
+          </div>
+          <div id="showcart">
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Money ($)</th>
+                <th>Delete</th>
+              </tr>
+              <tbody id="mycart"></tbody>
+            </table>
+            <br />
+            <a class="pay-btn" href="../page/paycart.html">Pay</a>
+            <button id="remove" onclick="removepr()">Remove</button>
+          </div>
+        </li>
+        <li>
+          <a id="login" href="../page/login.html"><i class="fa-solid fa-user-tie"></i></a>
+        </li>
+        <i id="close-bar" class="fa-solid fa-xmark"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div class="cart-icon">
+        <p onclick="showcart()"
+          ><i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-number">0</span></a
+        >
+      </div>
+      <i id="bar" class="fa-solid fa-list"></i>
+    </div>
+
+    <!-- End Nav  -->
+  </header>
+
+
+  <!-- Content -->
+  <section id="form-details">
+    <form >
+      <div class="form-img">
+        <img src="../img/blog/blog10.jpg" width="100%" alt="" srcset="">
+        <hr>
+        <ul class="social-media-list">
+          <li>
+            <a href="#" class="contact-icon"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" class="contact-icon"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-content">
+        <h2>
+          Leave us comments if you are not satisfied with our policy or service
+        </h2>
+        <span>We need your reviews to become better</span>
+        <input type="text" id="name" placeholder="NAME" name="name">
+        <input type="email" id="email" placeholder="EMAIL" name="email">
+        <textarea rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-envelope"></i><span class="send-text">SEND</span>
+          </div>
+        </button>
+      </div>
+    </form>
+  </section>
+  <!-- end content  -->
+
+  <!-- Location  -->
+  <section id="contact-details" class="section-p1">
+    <div class="details">
+      <h1>GET IN TOUCH</h1>
+      <h2>Visit one of our agency locations or contact us today</h2>
+      <h3>Head Office Address</h3>
+      <div>
+        <ul class="contact-list">
+          <li class="list-item">
+            <i class="fa-solid fa-road"><span class="contact-text place"> 38 Yen Bai,Đa Nang</span></i>
+          </li>
+          <li class="list-item">
+            <i class="fa fa-phone"><span class="contact-text phone"> +84 - 544655***</span></i>
+          </li>
+          <li class="list-item">
+            <i class="fa fa-envelope"><span class="contact-text gmail"> npcontact@npflavors.com</span></i>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.924562069724!2d108
+          .22039631477786!3d16.069403988880847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+          .1!3m3!1m2!1s0x314219a95db33d61%3A0x4aa50947449bd8fc!2zMzggWcOqbiBCw6Fp!5e0
+          !3m2!1svi!2s!4v1673230682595!5m2!1svi!2s" width="100%" height="100%"></iframe>
+    </div>
+  </section>
+  <!-- End location  -->
+
+  <!-- reassurance about -->
+  <!-- <div class="reassurance">
+    <ul class="reassurance-container">
+      <li>
+        <img src="../img/features/f3.png" alt="" />
+        <p>Shop N</p>
+      </li>
+    </ul>
+    <ul class="reassurance-container">
+      <li>
+        <img src="../img/about/giaohang2.png" alt="" />
+        <p>100% Secure Payment</p>
+      </li>
+    </ul>
+    <ul class="reassurance-container">
+      <li>
+        <img src="../img/about/giaohang3.png" alt="" />
+        <p>Absolute Warranty</p>
+      </li>
+    </ul>
+    <ul class="reassurance-container">
+      <li>
+        <img src="../img/about/giaohang4.png" alt="" />
+        <p>Free Customer Care</p>
+      </li>
+    </ul>
+    <ul class="reassurance-container">
+      <li>
+        <img src="../img/about/giaohang5.png" alt="" />
+        <p>Exclusive Distribution</p>
+      </li>
+    </ul>
+  </div> -->
+  <!-- reassurance about  -->
+
+
+  <!-- footer  -->
+  <section id="footer">
+    <div class="row">
+      <div class="col">
+        <a href="#"><img class="logoo" src="../img/logofooter.png" alt="" /></a>
+        <p class="gtlogo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
+        </p>
+      </div>
+
+      <div class="col">
+        <h3>
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Contact An Account Exec</p>
+        <p>Request a Sample</p>
+        <p>Technology & Innovation</p>
+        <p class="email-id">npcontact@npflavors.com</p>
+        <h4>+84 - 544655***</h4>
+      </div>
+
+      <div class="col">
+        <h3>
+          Learn
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul class="link-shop">
+          <li><a class="active" href="../index.html">Home</a></li>
+          <li><a href="../page/shop.html">Shop</a></li>
+          <li><a href="../page/blog.html">Blog</a></li>
+          <li><a href="../page/about.html">About</a></li>
+          <li><a href="../page/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>
+          Socials
+          <div class="underline"><span></span></div>
+        </h3>
+        <form>
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+        <div class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
+  </section>
+  <!-- end footer  -->
+</body>
+<script src="../js/product.js"></script>
+<script src="../js/main.js"></script>
+</html>
