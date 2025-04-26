@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "image": "img/products/productname1.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 50,
+      "brand": "DH FOODS",
+      "name": "PHU QUOC WHOLE BLACK PEPPERCORN",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/combo1.png",
+      "discountPrice": 9540,
+      "originalPrice": 20214,
+      "discountPercent": 55,
+      "brand": "DH FOODS",
+      "name": "COMBO ANISE CARDAMOM SPICE",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/combo2.jpg",
+      "discountPrice": 6540,
+      "originalPrice": 12214,
+      "discountPercent": 55,
+      "brand": "DH FOODS",
+      "name": "COMBO FOR VIETNAM LUNAR NEW YEAR",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/productname4.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 50,
+      "brand": "DH FOODS",
+      "name": "NATURAL INSTANT SHRIMP PASTE",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/productname5.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 70,
+      "brand": "DH FOODS",
+      "name": "NATURAL SWEET & SOUR FISH SAUCE",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/productname6.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 70,
+      "brand": "DH FOODS",
+      "name": "KOREAN KIMCHI SALTED SAUCE NATURAL CINNAMON",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/productname7.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 70,
+      "brand": "DH FOODS",
+      "name": "NATURAL CINNAMON ANNATTO OIL",
+      "quantity": 1
+    },
+    {
+      "image": "img/products/productname8.png",
+      "discountPrice": 1040,
+      "originalPrice": 2080,
+      "discountPercent": 70,
+      "brand": "DH FOODS",
+      "name": "BIRD'S EYE GREEN CHILI PEPPER SHRIMP SATE SAUCE",
+      "quantity": 1
+    }
+  ]
+}
