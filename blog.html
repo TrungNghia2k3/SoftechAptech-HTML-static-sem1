@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/blog.css" />
   <title>PN KFC | Blog</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
@@ -15,266 +16,97 @@
 <body>
   <!-- Header  -->
   <header>
-    <a href="index.html"><img src="img/logo.png" class="logo" alt="picture" /></a>
-    <!-- Nav -->
-    <div>
-      <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/shop.html">Shop</a></li>
-        <li><a class="active" href="/blog.html">Blog</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li>
-          <div class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="Type to search" />
-            <a class="search-btn" href="#">
-              <i class="fas fa-search"></i>
+    <div class="content">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="picture" />
+      </a>
+      <!-- Nav -->
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/blog.html" class="active">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <a class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-number">0</span>
             </a>
-          </div>
-        </li>
-        <li>
-          <div class="cart-icon">
-            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
-              <span id="lg-bag" class="cart-number">0</span></a>
-          </div>
-          <div id="showcart">
-            <table>
-              <tr>
-                <th>ID</th>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Money ($)</th>
-                <th>Delete</th>
-              </tr>
-              <tbody id="mycart"></tbody>
-            </table>
-            <br />
-            <a class="pay-btn" href="/paycart.html">Pay</a>
-            <button id="remove" onclick="removepr()">Remove</button>
-          </div>
-        </li>
-        <!-- <i id="close-bar" class="fa-solid fa-xmark"></i>  -->
-        <li>
-          <a id="login" href="/login.html"><i class="fa-solid fa-user-tie"></i></a>
-        </li>
-        <i id="close-bar" class="fa-solid fa-xmark"></i>
-      </ul>
-    </div>
-    <div id="mobile">
-      <div class="cart-icon">
-        <p onclick="showcart()"
-          ><i class="fa-solid fa-cart-shopping"></i>
-          <span id="cart-number">0</span></a
-        >
+            <!-- <div id="showcart">
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Money ($)</th>
+                  <th>Delete </th>
+                </tr>
+                <tbody id="mycart"></tbody>
+              </table>
+              <br>
+              <a class="pay-btn" href="/paycart.html">Pay</a>
+              <button id="remove" onclick="removepr()">Remove</button>
+            </div> -->
+          </li>
+          <i id="close-bar" class="fa-solid fa-xmark"></i>
+        </ul>
       </div>
-      <i id="bar" class="fa-solid fa-list"></i>
+      <div id="mobile">
+        <div id="lg-bag-2" class="cart-icon">
+          <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-number">0</span></a>
+        </div>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+
+      <!-- End Nav  -->
     </div>
-    <!-- End Nav  -->
   </header>
+  <!-- Header  -->
 
-  <!-- blog boss -->
-  <div class="blogBoss">
-    <div class="blogBossimg">
-      <img src="img/blog/bannerxxx.jpg" />
-    </div>
-    <div class="blogBosscontent">
-      <h1 class="head1">About Dh Foods</h1>
-      <p class="textp">
-        WELCOME TO DH FOODS
-
-        At Dh Foods, we have the belief that qualified spices would make meals more delicious and then help
-        people feel happier. Dh Foods' spices are also the specialties that carry along with the most
-        outstanding cultural features of several regions in Vietnam.
-
-        Being consistent with the criteria of “No Synthetic Color, No Artificial Preservatives, No Impurities”
-        right from the beginning, Dh Foods has become the first choice of safety and quality for consumers.
-
-        Dh Food's spice products meet not only the requirements of the domestic market but also the strict
-        standards of demanding markets like Japanese, Korean, Dutch, Australian, German, American, English, and
-        Russian. As a result, friends all over the world, as well as our compatriots living abroad, could have
-        Vietnamese spices for their daily use...
-      </p>
-      <p class="blogBossclick">
-        Read More <i class="fas fa-long-arrow-alt-right"></i>
-      </p>
+  <!-- Banner intro -->
+  <div class="banner-intro">
+    <img src="img/about/B1.jpg" width="100%" alt="picture" />
+    <div class=" banner-intro-text">
+      <h1>Blog</h1>
     </div>
   </div>
-  <!-- end blog boss -->
+  <!--  Banner intro  -->
 
-  <!-- blog media -->
-  <div class="blogMedia">
-    <h1>NP FOOD</h1>
-    <p>"Press Media"</p>
-  </div>
-  <div class="blogMediacontent">
-    <!-- card 1  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog2.jpg" alt="picture" />
+  <!-- media -->
+  <section class="media-area">
+    <div class="content">
+      <div class="title">
+        <h2>Media</h2>
       </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 20 November 2022</h4>
-        <h5 class="blogMedia-text">
-          CHANCE FOR WHO? - WHOSE CHANCE SEASON 4 OFFICIALLY BACK, BOOK
-          NGUYEN TRUNG DH FOODS JOINING?
-        </h5>
-        <p>
-          Following the success of 3 seasons on air, "Chance for whom? - Whose Chance?" Season 4 with the
-          message "Break out yourself - Elevate your career" has officially returned at the familiar broadcast
-          time frame: 12:00 every Saturday on VTV3 - Vietnam Television, starting from September 3 2022.
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
+      <div class="media-list" id="media-list"></div>
     </div>
-    <!-- card 2  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog1.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 3 June 2022</h4>
-        <h5 class="blogMedia-text">
-          THAIFEX EXHIBITION - ANUGA ASIA 2022 - FOOD & BEVERAGE INDUSTRY OF THAILAND
-        </h5>
-        <p>
-          Thaifex - Anuga 2022 has officially been put together after 5 exciting days with many new activities to
-          attract
-          buyers and visitors. This is Asia's leading Food and Beverage exhibition, taking place every year on a large
-          scale. Therefore, the event attracts many exhibitors and visitors. Dh Foods hopes to find opportunities to
-          cooperate
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-    <!-- card 3  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog4.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 3 June 2022</h4>
-        <h5 class="blogMedia-text">
-          DH FOODS CEO: I STARTED WITH DH FOODS NOT TO MAKE RICH
-        </h5>
-        <p>
-          Instead of managing human resources with discipline through applying sales and applying KPIs like
-          before, he experimented with a management style of "winning people's hearts": training, guiding and
-          inspiring, so that they love the company. and your work, then the business will have good results.
-          Like himself, he wants his employees to work with both good income and fun.
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- end blog media -->
+  </section>
 
-  <div class="blogMedia">
-    <h1>CUISINE</h1>
-    <p>"Delicious Food Recipes"</p>
-  </div>
-  <div class="blogMediacontent">
-    <!-- card 1  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog6.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 20 November 2022</h4>
-        <h5 class="blogMedia-text">
-          HOW TO MAKE undefeated delicious BBQ ribs with SIMPLE NATURAL SPICE PACK
-        </h5>
-        <p>
-          For meat lovers, surely we will not be able to help but mention the "delicious" grilled ribs that make
-          everyone crave. But in order to get delicious, rich, and succulent ribs, in addition to choosing quality
-          ribs, seasoning also plays an important role. Therefore, today the chef will show you an extremely easy
-          marinade recipe that anyone can do!
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-    <!-- card 2  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog7.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 3 June 2022</h4>
-        <h5 class="blogMedia-text">
-          DH FOODS Sour Soup Sauce - STANDARD SOUND SUPPLY RECIPE IN ONLY 5 MINUTES
-        </h5>
-        <p>
-          Sour soup is the "national" dish of every family, especially on hot days. Sour soup stimulates the taste
-          buds and makes the family meal tray more attractive and attractive. However, making delicious sour soup,
-          balancing the sour and sweet taste of the ingredients, relies on a lot of housewives' seasoning skills.
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-    <!-- card 3  -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog8.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 3 June 2022</h4>
-        <h5 class="blogMedia-text">
-          Thai Hot Pot Recipes For Busy People - DH FOODS Thai Hot Pot Sauce
-        </h5>
-        <p>
-          Although the famous hot pot dish of the Golden Temple has "invaded" the beginning of the alley,
-          Vietnamese street food. But for fast, neat, quick home cooking and still delicious, it's not an easy
-          challenge to overcome for busy people today. With Dh Foods Thai Hot Pot Sauce - A complete condiment,
-          discover the secret in just a moment
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-    <!-- card 4 -->
-    <div class="card">
-      <div class="blogMediaimg">
-        <img src="img/blog/blog9.jpg" alt="picture" />
-      </div>
-      <div class="blogMediatext">
-        <h4 class="blogMedia-text">Posred on 20 November 2022</h4>
-        <h5 class="blogMedia-text">
-          INSTRUCTIONS ON HOW TO MAKE DH FOODS MUSHROOM FOODS
-        </h5>
-        <p>
-          Complete seasoning - Dh Foods' Mushroom Hot Pot Sauce is a convenient product that helps you quickly and
-          successfully prepare a delicious and flavorful Mushroom Hot Pot broth. The sauce is concentrated from
-          many different mushroom flavors, harmoniously reducing the spices.Just a few more small steps,you can
-          enjoy even with the whole family
-        </p>
-        <p class="blogMediaclick">
-          Read More <i class="fas fa-long-arrow-alt-right ml-2"></i>
-        </p>
-      </div>
-    </div>
-  </div>
+  <!-- media -->
 
-  <!-- reassurance about  -->
+  <section class="cuisine-area">
+    <div class="content">
+      <div class="title">
+        <h2>Cuisine</h2>
+      </div>
+
+      <div class="cuisine-list" id="cuisine-list"></div>
+    </div>
+  </section>
+
   <!-- footer  -->
-  <section id="footer">
+  <footer>
     <div class="row">
       <div class="col">
-        <a href="#"><img class="logoo" src="img/logofooter.png" alt="" /></a>
-        <p class="gtlogo">
-          Our flavours were designed to trigger both your passion for and
-          enjoyment of food
+        <div class="logo-footer">
+          <img class="logo" src="img/logo.png" alt="logo" />
+        </div>
+        <p class="description-logo">
+          Our flavours were designed to trigger both your passion for and enjoyment of food
         </p>
       </div>
 
@@ -283,11 +115,14 @@
           Contact Us
           <div class="underline"><span></span></div>
         </h3>
-        <p>Contact An Account Exec</p>
-        <p>Request a Sample</p>
-        <p>Technology & Innovation</p>
-        <p class="email-id">npcontact@npflavors.com</p>
-        <h4>+84 - 544655***</h4>
+        <ul class="link-shop">
+          <li>Contact An Account Exec</li>
+          <li>Request a Sample</li>
+          <li>Technology & Innovation</li>
+          <li>npcontact@npflavors.com</li>
+          <li>+84 - 544655***</li>
+        </ul>
+
       </div>
 
       <div class="col">
@@ -296,13 +131,14 @@
           <div class="underline"><span></span></div>
         </h3>
         <ul class="link-shop">
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="/shop.html">Shop</a></li>
-          <li><a class="active" href="/blog.html">Blog</a></li>
+          <li><a href="/blog.html">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div class="col">
         <h3>
           Socials
@@ -310,7 +146,7 @@
         </h3>
         <form>
           <i class="fa-regular fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required />
+          <input type="email" placeholder="Enter email" required />
           <button type="submit">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -325,9 +161,9 @@
     </div>
     <hr />
     <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
-  </section>
+  </footer>
   <!-- end footer  -->
 </body>
-<script src="js/main.js"></script>
+<script src="js/blog.js"></script>
 
 </html>

@@ -1,0 +1,161 @@
+#contact-form {
+    padding-top: 100px;
+}
+
+#contact-form .content {
+    width: 1300px;
+    margin: auto;
+    padding: 0px 8px;
+    display: flex;
+}
+
+.form-content {
+    width: 50%;
+}
+
+.form-img {
+    padding: 40px;
+    width: 50%;
+    float: right;
+}
+
+.form-img hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 2px ridge #0ea5e9;
+}
+
+.social-media-list {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.social-media-list li {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-media-list li a {
+    color: #062292;
+}
+
+.social-media-list li:hover a {
+    color: rgb(207, 27, 24);
+}
+
+form .form-content h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+form .form-content input,
+form .form-content textarea {
+    width: 100%;
+    padding: 15px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+form .form-content button {
+    background-color: rgb(122, 5, 5);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+form .form-content button:hover {
+    opacity: 80%;
+}
+
+.send-button {
+    border-radius: 10px;
+    margin: 15px 0px;
+    height: 25px;
+    width: 100%;
+}
+
+.alt-send-button {
+    width: 100%;
+    transition: all 0.4s ease-out;
+}
+
+.send-text {
+    display: block;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+#contact-location {
+    width: 100%;
+    padding: 100px 0;
+    margin: 0;
+}
+
+#contact-location .content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-location .content iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    display: block;
+}
+
+/* reassurance  */
+.reassurance {
+    padding-bottom: 100px;
+}
+
+.reassurance .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.reassurance .reassurance-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.reassurance .reassurance-container li {
+    width: 150px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: #9e9fa1;
+}
+
+.reassurance .reassurance-container li img {
+    height: 100px;
+    transition: all 0.3s;
+    filter: grayscale(100%) opacity(0.5);
+}
+
+.reassurance .reassurance-container li img:hover {
+    filter: none;
+}
+/* end reassurance */

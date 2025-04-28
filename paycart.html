@@ -1,89 +1,41 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/paycart.css" />
-    <title>PN KFC | Paycart</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-  </head>
-  <body >
-    <!-- Header  -->
-    <header>
-      <a href="index.html"><img src="img/logo.png" class="logo" alt="picture" /></a>
-      <!-- Nav -->
-      <div>
-        <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a  href="/shop.html">Shop</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li>
-            <div class="search-box">
-              <input
-                class="search-txt"
-                type="text"
-                name=""
-                placeholder="Type to search"
-              />
-              <a class="search-btn" href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="cart-icon">
-              <p onclick="showcart()"
-                ><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
-                <span id="lg-bag" class="cart-number">0</span></a
-              >
-            </div>
-            <div id="showcart">
-              <table>
-                <tr>
-                  <th>ID</th>
-                  <th>Image</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Subtotal ($)</th>
-                  <th>Delete</th>
-                </tr>
-                <tbody id="mycart"></tbody>
-              </table>
-            </div>
-          </li>
-          <i id="close-bar" class="fa-solid fa-xmark"></i>
-        </ul>
-      </div>
-      <div id="mobile">
-        <div class="cart-icon">
-          <p onclick="showcart()"
-            ><i class="fa-solid fa-cart-shopping"></i>
-            <span id="cart-number">0</span></a
-          >
-        </div>
-        <i id="bar" class="fa-solid fa-list"></i>
-      </div>
-      <!-- End Nav  -->
-    </header>
-    <!-- End Header  -->
 
-    <!-- Banner  -->
-    
-    <!-- End Banner  -->
-    <!-- pay cart  -->
-    <div class="cart-pay">
-      <div class="box-cart">
-          <div class="box-cart-1">
-            <h1>Your Cart</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/paycart.css" />
+  <title>PN KFC | Paycart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Header  -->
+  <header>
+    <a href="index.html"><img src="img/logo.png" class="logo" alt="picture" /></a>
+    <!-- Nav -->
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li>
+          <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search" />
+            <a class="search-btn" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="cart-icon">
+            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
+              <span id="lg-bag" class="cart-number">0</span></a>
+          </div>
+          <div id="showcart">
             <table>
               <tr>
                 <th>ID</th>
@@ -94,61 +46,98 @@
                 <th>Subtotal ($)</th>
                 <th>Delete</th>
               </tr>
-              <tbody id="payCart">
-              </tbody>
-              
-            </table>     
-            <br>
-            <button id="remove" onclick="removepr()">Remove</button>     
+              <tbody id="mycart"></tbody>
+            </table>
           </div>
-          <a id="login" href="/login.html"><i class="fa-solid fa-user-tie"></i>Login</a>
-          <div class="box-cart-2">
-            <form action="">
-                <div class="row">       
-                    <div id="infomation-checkout" class="col">        
-                        <h3 class="title">Billing address</h3>       
-                        <div class="inputBox">
-                            <span>Full name :</span>
-                            <input type="text" placeholder="john deo">
-                        </div>
-                        <div class="inputBox">
-                            <span>Email :</span>
-                            <input type="email" placeholder="example@example.com">
-                        </div>
-                        <div class="inputBox">
-                            <span>Address :</span>
-                            <input type="text" placeholder="room - street - locality">
-                        </div>
-                        <div class="inputBox">
-                            <span>City :</span>
-                            <input type="text" placeholder="mumbai">
-                        </div>
-                        <div class="flex">
-                            <div class="inputBox">
-                                <span>State :</span>
-                                <input type="text" placeholder="india">
-                            </div>
-                            <div class="inputBox">
-                                <span>Telephone :</span>
-                                <input type="tel" placeholder="">
-                            </div>
-                        </div>
-                    </div>
-        
-                       
-                </div>       
-                <button type="submit" value="Proceed to checkout" class="submit-btn" onclick="checkout()">Process to success</button>
-            </form>
-        </div>    
-        </div>
+        </li>
+        <i id="close-bar" class="fa-solid fa-xmark"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div class="cart-icon">
+        <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-number">0</span></a>
+      </div>
+      <i id="bar" class="fa-solid fa-list"></i>
+    </div>
+    <!-- End Nav  -->
+  </header>
+  <!-- End Header  -->
+
+  <!-- Banner  -->
+
+  <!-- End Banner  -->
+  <!-- pay cart  -->
+  <div class="cart-pay">
+    <div class="box-cart">
+      <div class="box-cart-1">
+        <h1>Your Cart</h1>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal ($)</th>
+            <th>Delete</th>
+          </tr>
+          <tbody id="payCart">
+          </tbody>
+
+        </table>
+        <br>
+        <button id="remove" onclick="removepr()">Remove</button>
+      </div>
+      <a id="login" href="/login.html"><i class="fa-solid fa-user-tie"></i>Login</a>
+      <div class="box-cart-2">
+        <form action="">
+          <div class="row">
+            <div id="infomation-checkout" class="col">
+              <h3 class="title">Billing address</h3>
+              <div class="inputBox">
+                <span>Full name :</span>
+                <input type="text" placeholder="john deo">
+              </div>
+              <div class="inputBox">
+                <span>Email :</span>
+                <input type="email" placeholder="example@example.com">
+              </div>
+              <div class="inputBox">
+                <span>Address :</span>
+                <input type="text" placeholder="room - street - locality">
+              </div>
+              <div class="inputBox">
+                <span>City :</span>
+                <input type="text" placeholder="mumbai">
+              </div>
+              <div class="flex">
+                <div class="inputBox">
+                  <span>State :</span>
+                  <input type="text" placeholder="india">
+                </div>
+                <div class="inputBox">
+                  <span>Telephone :</span>
+                  <input type="tel" placeholder="">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <button type="submit" value="Proceed to checkout" class="submit-btn" onclick="checkout()">Process to
+            success</button>
+        </form>
       </div>
     </div>
-    <!-- end pay cart  -->
+  </div>
+  </div>
+  <!-- end pay cart  -->
 
-   
-    <!-- reassurance about  -->
 
-    <!-- footer  -->
+  <!-- reassurance about  -->
+
+  <!-- footer  -->
   <section id="footer">
     <div class="row">
       <div class="col">
@@ -206,11 +195,12 @@
     <hr />
     <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
   </section>
-    <!-- end footer  -->
-  </body>
-  <script src="js/main.js"></script>
-  <script>
-    showpaycart();
-    showcountsp();
-  </script>
+  <!-- end footer  -->
+</body>
+<script src="js/main.js"></script>
+<script>
+  showpaycart();
+  showcountsp();
+</script>
+
 </html>

@@ -6,7 +6,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/about.css" />
   <title>PN KFC | About Us </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,110 +16,123 @@
 <body>
   <!-- Header  -->
   <header>
-    <a href="index.html"><img src="img/logo.png" class="logo" alt="picture" /></a>
-    <!-- Nav -->
-    <div>
-      <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/shop.html">Shop</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a class="active" href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li>
-          <div class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="Type to search" />
-            <a class="search-btn" href="#">
-              <i class="fas fa-search"></i>
+    <div class="content">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="picture" />
+      </a>
+      <!-- Nav -->
+      <div id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/about.html" class="active">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <a class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-number">0</span>
             </a>
-          </div>
-        </li>
-        <li>
-          <div class="cart-icon">
-            <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
-              <span id="lg-bag" class="cart-number">0</span></a>
-          </div>
-          <div id="showcart">
-            <table>
-              <tr>
-                <th>ID</th>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Money ($)</th>
-                <th>Delete</th>
-              </tr>
-              <tbody id="mycart"></tbody>
-            </table>
-            <br />
-            <a class="pay-btn" href="/paycart.html">Pay</a>
-            <button id="remove" onclick="removepr()">Remove</button>
-          </div>
-        </li>
-
-        <li>
-          <a id="login" href="/login.html"><i class="fa-solid fa-user-tie"></i></a>
-        </li>
-        <i id="close-bar" class="fa-solid fa-xmark"></i>
-      </ul>
-    </div>
-    <div id="mobile">
-      <div class="cart-icon">
-        <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
-          <span id="cart-number">0</span></a>
+            <!-- <div id="showcart">
+              <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Money ($)</th>
+                  <th>Delete </th>
+                </tr>
+                <tbody id="mycart"></tbody>
+              </table>
+              <br>
+              <a class="pay-btn" href="/paycart.html">Pay</a>
+              <button id="remove" onclick="removepr()">Remove</button>
+            </div> -->
+          </li>
+          <i id="close-bar" class="fa-solid fa-xmark"></i>
+        </ul>
       </div>
-      <i id="bar" class="fa-solid fa-list"></i>
+      <div id="mobile">
+        <div id="lg-bag-2" class="cart-icon">
+          <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-number">0</span></a>
+        </div>
+        <i id="bar" class="fa-solid fa-list"></i>
+      </div>
+
+      <!-- End Nav  -->
     </div>
-    <!-- End Nav  -->
   </header>
+  <!-- Header  -->
 
-  <div class="about-header">
+  <!-- Banner intro -->
+  <div class="banner-intro">
     <img src="img/about/B1.jpg" width="100%" alt="picture" />
-    <div class="about-banner">
-      <h1>About Us.</h1>
-      <h3>grocery store</h3>
-      <div class="newslatter">
-        <form>
-          <input class="input-about" type="text" name="" id="" placeholder="What do you want to buy?" />
-          <input class="input-about" type="submit" value="Search" />
-        </form>
-      </div>
+    <div class=" banner-intro-text">
+      <h1>About Us</h1>
     </div>
   </div>
-  <!-- End banner  -->
+  <!--  Banner intro  -->
+
+  <!-- Boss introduction -->
+  <section class="boss-introduction">
+    <div class="content">
+      <div class="boss-description">
+        <h2>WELCOME TO DH FOODS</h2>
+
+        <p>At Dh Foods, we have the belief that qualified spices would make meals more delicious and then help
+          people feel happier. Dh Foods' spices are also the specialties that carry along with the most
+          outstanding cultural features of several regions in Vietnam.
+
+          Being consistent with the criteria of “No Synthetic Color, No Artificial Preservatives, No Impurities”
+          right from the beginning, Dh Foods has become the first choice of safety and quality for consumers.
+        </p>
+
+        <button class="about-btn">
+          Read More
+        </button>
+      </div>
+
+      <div class="boss-image">
+        <img src="img/about/boss.jpg" />
+      </div>
+    </div>
+
+  </section>
+  <!-- end blog boss -->
 
   <!-- Shop introduction -->
-  <div class="about">
-    <div class="about-main">
-      <div class="about-img">
+  <section class="shop-introduction">
+    <div class="content">
+      <div class="shop-introduction-img">
         <img src="img/about/B3.jpg" alt="picture" />
       </div>
-      <div class="about-text">
+      <div class="shop-introduction-text">
         <h2>WE HAVE THE BEST SPICE SUPPLY</h2>
         <p>
           The shop was founded by 3 team members. Shop specializing in spices. We can give you helpful tips about your
           meal.
         </p>
-        <button type="button"><span>See More</span></button>
+        <button class="about-btn">
+          See More
+        </button>
       </div>
     </div>
-  </div>
-  <!-- End Shop introduction  -->
-
-  <!-- reassurance about -->
-
-  <!-- reassurance about  -->
+  </section>
+  <!-- Shop introduction  -->
 
   <!-- support about -->
   <div class="support-me">
-    <p>Do you need any help ?</p>
-    <a href="#" class="button-two">Support</a>
+    <p>Do you need any help?</p>
+    <a href="#" class="about-btn">Support</a>
   </div>
-  <!-- End support about  -->
+  <!-- support about  -->
 
-  <!--Flow me  -->
-  <div class="folow-me">
-    <p>PN Fooods</p>
+  <!--Follow me  -->
+  <div class="follow-me">
+    <p>PN Foods</p>
     <p>
       Let us bring you the best experience when visiting the shop, please
       click the icon below to follow our shop
@@ -132,11 +146,13 @@
   <!-- End flow me  -->
 
   <!-- footer  -->
-  <div id="footer">
+  <footer>
     <div class="row">
       <div class="col">
-        <a href="#"><img class="logoo" src="img/logofooter.png" alt="" /></a>
-        <p class="gtlogo">
+        <div class="logo-footer">
+          <img class="logo" src="img/logo.png" alt="logo" />
+        </div>
+        <p class="description-logo">
           Our flavours were designed to trigger both your passion for and enjoyment of food
         </p>
       </div>
@@ -146,11 +162,14 @@
           Contact Us
           <div class="underline"><span></span></div>
         </h3>
-        <p>Contact An Account Exec</p>
-        <p>Request a Sample</p>
-        <p>Technology & Innovation</p>
-        <p class="email-id">npcontact@npflavors.com</p>
-        <h4>+84 - 544655***</h4>
+        <ul class="link-shop">
+          <li>Contact An Account Exec</li>
+          <li>Request a Sample</li>
+          <li>Technology & Innovation</li>
+          <li>npcontact@npflavors.com</li>
+          <li>+84 - 544655***</li>
+        </ul>
+
       </div>
 
       <div class="col">
@@ -166,6 +185,7 @@
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div class="col">
         <h3>
           Socials
@@ -173,7 +193,7 @@
         </h3>
         <form>
           <i class="fa-regular fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required />
+          <input type="email" placeholder="Enter email" required />
           <button type="submit">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -188,7 +208,7 @@
     </div>
     <hr />
     <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
-  </div>
+  </footer>
   <!-- end footer  -->
 </body>
 <script src="js/main.js"></script>

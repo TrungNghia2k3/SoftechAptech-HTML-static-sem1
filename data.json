@@ -2,75 +2,125 @@
   "products": [
     {
       "image": "img/products/productname1.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 50,
-      "brand": "DH FOODS",
-      "name": "PHU QUOC WHOLE BLACK PEPPERCORN",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "PHU QUOC WHOLE BLACK PEPPERCORN"
     },
     {
-      "image": "img/products/combo1.png",
-      "discountPrice": 9540,
-      "originalPrice": 20214,
-      "discountPercent": 55,
-      "brand": "DH FOODS",
-      "name": "COMBO ANISE CARDAMOM SPICE",
-      "quantity": 1
+      "image": "img/products/productname2.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "COMBO ANISE CARDAMOM SPICE"
     },
     {
-      "image": "img/products/combo2.jpg",
-      "discountPrice": 6540,
-      "originalPrice": 12214,
-      "discountPercent": 55,
-      "brand": "DH FOODS",
-      "name": "COMBO FOR VIETNAM LUNAR NEW YEAR",
-      "quantity": 1
+      "image": "img/products/productname3.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "TAY NINH GREEN CHILI SALT MIXTURE"
     },
     {
       "image": "img/products/productname4.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 50,
-      "brand": "DH FOODS",
-      "name": "NATURAL INSTANT SHRIMP PASTE",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "NATURAL INSTANT SHRIMP PASTE"
     },
     {
       "image": "img/products/productname5.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 70,
-      "brand": "DH FOODS",
-      "name": "NATURAL SWEET & SOUR FISH SAUCE",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "NATURAL SWEET & SOUR FISH SAUCE"
     },
     {
       "image": "img/products/productname6.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 70,
-      "brand": "DH FOODS",
-      "name": "KOREAN KIMCHI SALTED SAUCE NATURAL CINNAMON",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "SALTED SAUCE NATURAL CINNAMON"
     },
     {
       "image": "img/products/productname7.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 70,
-      "brand": "DH FOODS",
-      "name": "NATURAL CINNAMON ANNATTO OIL",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "NATURAL CINNAMON ANNATTO OIL"
     },
     {
       "image": "img/products/productname8.png",
-      "discountPrice": 1040,
-      "originalPrice": 2080,
-      "discountPercent": 70,
-      "brand": "DH FOODS",
-      "name": "BIRD'S EYE GREEN CHILI PEPPER SHRIMP SATE SAUCE",
-      "quantity": 1
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "CHILI PEPPER SHRIMP SATE SAUCE"
+    }
+  ],
+  "combo": [
+    {
+      "image": "img/products/combo1.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "COMBO ANISE CARDAMOM SPICE"
+    },
+    {
+      "image": "img/products/combo2.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "COMBO ANISE CARDAMOM SPICE"
+    },
+    {
+      "image": "img/products/combo3.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "COMBO ANISE CARDAMOM SPICE"
+    },
+    {
+      "image": "img/products/combo4.png",
+      "discountPrice": 1.024,
+      "originalPrice": 2.048,
+      "name": "COMBO ANISE CARDAMOM SPICE"
+    }
+  ],
+  "media": [
+    {
+      "image": "img/blog/media1.jpg",
+      "title": "CHANCE FOR WHO? - WHOSE CHANCE SEASON 4 OFFICIALLY BACK, BOOK NGUYEN TRUNG DH FOODS JOINING?",
+      "description": "Following the success of 3 seasons on air,\"Chance for whom? - Whose Chance?\" Season 4 with the message\"Break out yourself - Elevate your career\" has officially returned at the familiar broadcast time frame: 12:00 every Saturday on VTV3 - Vietnam Television, starting from September 3 2022.",
+      "date": "20 November 2022"
+    },
+    {
+      "image": "img/blog/media2.jpg",
+      "title": "THAIFEX EXHIBITION - ANUGA ASIA 2022 - FOOD & BEVERAGE INDUSTRY OF THAILAND",
+      "description": "Thaifex - Anuga 2022 has officially been put together after 5 exciting days with many new activities to attract buyers and visitors. This is Asia's leading Food and Beverage exhibition, taking place every year on a large scale. Therefore, the event attracts many exhibitors and visitors. Dh Foods hopes to find opportunities to cooperate.",
+      "date": " 3 June 2022"
+    },
+    {
+      "image": "img/blog/media3.jpg",
+      "title": "DH FOODS CEO: I STARTED WITH DH FOODS NOT TO MAKE RICH",
+      "description": "Instead of managing human resources with discipline through applying sales and applying KPIs like before, he experimented with a management style of \"winning people's hearts\": training, guiding and inspiring, so that they love the company. and your work, then the business will have good results. Like himself, he wants his employees to work with both good income and fun.",
+      "date": " 3 June 2022"
+    },
+    {
+      "image": "img/blog/media4.jpg",
+      "title": "DH FOODS CEO: I STARTED WITH DH FOODS NOT TO MAKE RICH",
+      "description": "Instead of managing human resources with discipline through applying sales and applying KPIs like before, he experimented with a management style of \"winning people's hearts\": training, guiding and inspiring, so that they love the company. and your work, then the business will have good results. Like himself, he wants his employees to work with both good income and fun.",
+      "date": " 3 June 2022"
+    }
+  ],
+  "cuisine": [
+    {
+      "image": "img/blog/cuisine1.jpg",
+      "title": "HOW TO MAKE undefeated delicious BBQ ribs with SIMPLE NATURAL SPICE PACK",
+      "description": "For meat lovers, surely we will not be able to help but mention the \"delicious\" grilled ribs that make everyone crave. But in order to get delicious, rich, and succulent ribs, in addition to choosing quality ribs, seasoning also plays an important role. Therefore, today the chef will show you an extremely easy marinade recipe that anyone can do!"
+    },
+    {
+      "image": "img/blog/cuisine2.jpg",
+      "title": "DH FOODS Sour Soup Sauce - STANDARD SOUND SUPPLY RECIPE IN ONLY 5 MINUTES",
+      "description": "Sour soup is the \"national\" dish of every family, especially on hot days. Sour soup stimulates the taste buds and makes the family meal tray more attractive and attractive. However, making delicious sour soup, balancing the sour and sweet taste of the ingredients, relies on a lot of housewives' seasoning skills."
+    },
+    {
+      "image": "img/blog/cuisine3.jpg",
+      "title": "Thai Hot Pot Recipes For Busy People - DH FOODS Thai Hot Pot Sauce",
+      "description": "Although the famous hot pot dish of the Golden Temple has \"invaded\" the beginning of the alley, Vietnamese street food. But for fast, neat, quick home cooking and still delicious, it's not an easy challenge to overcome for busy people today. With Dh Foods Thai Hot Pot Sauce - A complete condiment, discover the secret in just a moment."
+    },
+    {
+      "image": "img/blog/cuisine4.jpg",
+      "title": "INSTRUCTIONS ON HOW TO MAKE DH FOODS MUSHROOM FOODS",
+      "description": "Complete seasoning - Dh Foods' Mushroom Hot Pot Sauce is a convenient product that helps you quickly and successfully prepare a delicious and flavorful Mushroom Hot Pot broth. The sauce is concentrated from many different mushroom flavors, harmoniously reducing the spices.Just a few more small steps,you can enjoy even with the whole family."
     }
   ]
 }

@@ -6,31 +6,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/index.css" />
   <title>PN KFC</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
   <!-- Header  -->
   <header>
     <div class="content">
-      <a href="index.html"><img src="img/logo.png" class="logo" alt="pictur
-        e" /></a>
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="picture" />
+      </a>
       <!-- Nav -->
-      <div>
-        <ul id="navbar">
+      <div id="navbar">
+        <ul>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="/shop.html">Product</a></li>
+          <li><a href="/shop.html">Shop</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li>
-            <div class="cart-icon">
-              <p onclick="showcart()"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i>
-                <span id="lg-bag" class="cart-number">0</span></a>
-            </div>
-            <div id="showcart">
+            <a class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-number">0</span>
+            </a>
+            <!-- <div id="showcart">
               <table>
                 <tr>
                   <th>ID</th>
@@ -46,10 +48,7 @@
               <br>
               <a class="pay-btn" href="/paycart.html">Pay</a>
               <button id="remove" onclick="removepr()">Remove</button>
-            </div>
-          </li>
-          <li>
-            <a id="login" href="/login.html"><i class="fa-solid fa-user-tie"></i></a>
+            </div> -->
           </li>
           <i id="close-bar" class="fa-solid fa-xmark"></i>
         </ul>
@@ -61,17 +60,17 @@
         </div>
         <i id="bar" class="fa-solid fa-list"></i>
       </div>
+
       <!-- End Nav  -->
     </div>
   </header>
-  <!-- End Header  -->
+  <!-- Header  -->
 
-  <!-- Home slider  -->
-  <section class="home-area">
+  <!-- Slider  -->
+  <section class="slider-area">
     <img class="img-slide active" src="img/slider/slider1.jpg" autoplay muted loop></img>
     <img class="img-slide" src="img/slider/slider2.jpg" autoplay muted loop></img>
     <img class="img-slide" src="img/slider/slider3.jpg" autoplay muted loop></img>
-    <img class="img-slide" src="img/slider/slider4.jpg" autoplay muted loop></img>
 
     <div class="media-icons">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -82,10 +81,9 @@
       <div class="nav-btn active"></div>
       <div class="nav-btn"></div>
       <div class="nav-btn"></div>
-      <div class="nav-btn"></div>
     </div>
   </section>
-  <!-- End Home silder  -->
+  <!-- Silder  -->
 
   <!-- Main product area  -->
   <section class="main-product-area">
@@ -94,251 +92,38 @@
         <h2>The main products</h2>
       </div>
 
-      <div class="products-container">
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/productname1.png" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-50%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">PHU QUOC WHOLE BLACK PEPPERCORN </h4>
-          <input type="number" name="quantity" min="1" max="10" value="1" required />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/combo1.png" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>9.540</span> $ </p>
-            <span class="price-standard"> 20.214 $ </span>
-            <span class="price-reduced">-55%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name"> COMBO ANISE CARDAMOM SPICE </h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/combo2.jpg" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>6.540</span> $ </p>
-            <span class="price-standard"> 12.214 $ </span>
-            <span class="price-reduced">-55%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name"> COMBO FOR VIETNAM LUNAR NEW YEAR </h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/productname4.png" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-50%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">NATURAL INSTANT SHRIMP PASTE</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/productname5.png" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-70%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">KOREAN KIMCHI SALTED SAUCE NATURAL CINNAMON</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="img">
-            <img src="img/products/productname6.png" alt="" />
-          </div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-70%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">KOREAN KIMCHI SALTED SAUCE NATURAL CINNAMON</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)">
-            <span>Buy now</span>
-          </button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname7.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-70%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name"> NATURAL CINNAMON ANNATTO OIL</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname8.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span>1.040</span> $ </p>
-            <span class="price-standard"> 2.080 $ </span>
-            <span class="price-reduced">-70%</span>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">BIRD'S EYE GREEN CHILI PEPPER SHRIMP SATE SAUCE</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-      </div>
+      <div class="products-container" id="products-container"></div>
     </div>
   </section>
-  <!-- End Product list 1  -->
+  <!-- Main product area  -->
 
   <!-- Banner 2  -->
   <section id="banner2">
     <div class="content">
       <h4>Press Corner</h4>
-      <h2>Dh Foods <span>Boss:</span>"I am no longer aggressive and eager to get rich quick like when I was young"</h2>
-      <a href="/blog.html"><button class="normal">Explore More</button></a>
+      <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit culpa veniam nobis nisi possimus iusto
+        porro! Rerum deserunt quam necessitatibus accusamus harum eos culpa illum doloribus doloremque, sint excepturi.
+      </h2>
+      <button class="banner2-button">
+        <a href="/blog.html">Explore More</a>
+      </button>
     </div>
   </section>
-  <!-- End Banner 2  -->
+  <!-- Banner 2  -->
 
-  <!-- Product list 2  -->
+  <!-- New products  -->
   <section class="new-product-area">
     <div class="content">
       <div class="title">
         <h2>New Product</h2>
       </div>
 
-      <div class="products-container">
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname9.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span> 2.080 </span> $ </p>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">TAY NINH GREEN CHILI SALT MIXTURE</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname10.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span> 2.080 </span> $ </p>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">TAY NINH CHILI-FLAVORED SALT MIXTURE</h4>
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname11.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span> 2.080 </span> $ </p>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">GREEN CHILI PEPPER SAUCE NATURAL CINNAMON</h4>
+      <div class="new-products-container" id="new-products-container"></div>
 
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class=" img "><img src="img/products/productname12.png" alt="" /></div>
-          <div class="price">
-            <p class="price-discount"><span> 2.080 </span> $ </p>
-          </div>
-          <h4 class="trademark">DH FOODS</h4>
-          <h4 class="name">KUMQUAT SAUCE NATURAL CINNAMON</h4>
-
-          <input type="number" name="soluong" min="1" max="10" value="1" />
-          <button onclick="addtocart(this)"><span onclick="window.location.href='/paycart.html'">Buy
-              now</span></button>
-          <span onclick="addtocart(this)" class="card"><i class='bx bx-cart-add'></i></span>
-          <div class="rating">
-            <span class="heard"><i class='bx bx-heart'></i></span>
-          </div>
-        </div>
-      </div>
+    </div>
     </div>
   </section>
-  <!-- End Product list 2  -->
-
+  <!-- New products  -->
 
   <!-- Banner 3  -->
   <section id="banner3">
@@ -348,7 +133,7 @@
       <div class="banner-box banner-box3"></div>
     </div>
   </section>
-  <!-- End Banner 3  -->
+  <!-- Banner 3  -->
 
   <!-- Newsletter  -->
   <section id="newsletter">
@@ -359,7 +144,6 @@
           Join our mailing list and discover all the ways you can use our line of food flavours.
 
           Plus receive fun and exciting recipes updates on product and access to exclusive savings.
-          <span>Special offers !</span>
         </p>
       </div>
 
@@ -372,11 +156,13 @@
   <!-- End Newsletter  -->
 
   <!-- footer  -->
-  <!-- <section id="footer">
+  <footer>
     <div class="row">
       <div class="col">
-        <a href="#"><img class="logo" src="img/logofooter.png" alt="" /></a>
-        <p class="gtlogo">
+        <div class="logo-footer">
+          <img class="logo" src="img/logo.png" alt="logo" />
+        </div>
+        <p class="description-logo">
           Our flavours were designed to trigger both your passion for and enjoyment of food
         </p>
       </div>
@@ -386,11 +172,14 @@
           Contact Us
           <div class="underline"><span></span></div>
         </h3>
-        <p>Contact An Account Exec</p>
-        <p>Request a Sample</p>
-        <p>Technology & Innovation</p>
-        <p class="email-id">npcontact@npflavors.com</p>
-        <h4>+84 - 544655***</h4>
+        <ul class="link-shop">
+          <li>Contact An Account Exec</li>
+          <li>Request a Sample</li>
+          <li>Technology & Innovation</li>
+          <li>npcontact@npflavors.com</li>
+          <li>+84 - 544655***</li>
+        </ul>
+
       </div>
 
       <div class="col">
@@ -406,6 +195,7 @@
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </div>
+
       <div class="col">
         <h3>
           Socials
@@ -413,7 +203,7 @@
         </h3>
         <form>
           <i class="fa-regular fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required />
+          <input type="email" placeholder="Enter email" required />
           <button type="submit">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -428,11 +218,10 @@
     </div>
     <hr />
     <p class="copyright">Copyright © 2023 | Site by NP Flavors</p>
-  </section> -->
+  </footer>
   <!-- end footer  -->
 </body>
 
-<script src="js/main.js"></script>
-<script src="js/product.js"></script>
+<script src="js/index.js"></script>
 
 </html>

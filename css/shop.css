@@ -1,0 +1,99 @@
+.input-group {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px 15px;
+    width: 50%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+#button-search {
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-left: 8px;
+    background-color: rgb(122, 9, 9);
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 85%;
+    transition: 0.2s ease-in-out;
+}
+
+#button-search:hover {
+    opacity: 100%;
+}
+
+#product-area {
+    padding-top: 100px;
+}
+
+#product-area .content {
+    width: 1300px;
+    margin: auto;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.main-product-area .content {
+    width: 1300px;
+    margin: auto;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#filter_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#filter_button .btn {
+    padding: 10px;
+    color: whitesmoke;
+    background-color: rgb(224, 208, 65);
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filter_button .active {
+    background-color: red;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    background-color: rgb(117, 16, 16);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+/* End Shop Page  */
