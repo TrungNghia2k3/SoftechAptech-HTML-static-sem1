@@ -36,7 +36,9 @@ function renderProducts(products) {
             <i class="fa-solid fa-cart-plus"></i>
         </span>
         <div class="product-img">
+          <a href="product-details.html?id=${product.id}">
             <img src="${product.image}" alt="${product.name}" />
+          </a>
         </div>
         <div class="price">
             <p class="price-discount">
@@ -49,7 +51,9 @@ function renderProducts(products) {
             min="1"
             value="1" />
         </div>
-        <h4 class="product-name">${product.name}</h4>
+        <a href="product-details.html?id=${product.id}">
+          <h4 class="product-name">${product.name}</h4>
+        </a>
         <button>
             <a href="#">Buy now</a>
         </button>

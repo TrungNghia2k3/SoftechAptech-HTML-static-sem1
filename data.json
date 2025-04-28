@@ -1,52 +1,68 @@
 {
   "products": [
     {
+      "id": 1,
       "image": "img/products/productname1.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "PHU QUOC WHOLE BLACK PEPPERCORN"
+      "name": "PHU QUOC WHOLE BLACK PEPPERCORN",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 2,
       "image": "img/products/productname2.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "COMBO ANISE CARDAMOM SPICE"
+      "name": "COMBO ANISE CARDAMOM SPICE",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 3,
       "image": "img/products/productname3.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "TAY NINH GREEN CHILI SALT MIXTURE"
+      "name": "TAY NINH GREEN CHILI SALT MIXTURE",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 4,
       "image": "img/products/productname4.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "NATURAL INSTANT SHRIMP PASTE"
+      "name": "NATURAL INSTANT SHRIMP PASTE",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 5,
       "image": "img/products/productname5.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "NATURAL SWEET & SOUR FISH SAUCE"
+      "name": "NATURAL SWEET & SOUR FISH SAUCE",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 6,
       "image": "img/products/productname6.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "SALTED SAUCE NATURAL CINNAMON"
+      "name": "SALTED SAUCE NATURAL CINNAMON",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 7,
       "image": "img/products/productname7.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "NATURAL CINNAMON ANNATTO OIL"
+      "name": "NATURAL CINNAMON ANNATTO OIL",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     },
     {
+      "id": 8,
       "image": "img/products/productname8.png",
       "discountPrice": 1.024,
       "originalPrice": 2.048,
-      "name": "CHILI PEPPER SHRIMP SATE SAUCE"
+      "name": "CHILI PEPPER SHRIMP SATE SAUCE",
+      "description": "Phu Quoc whole black peppercorn comes from Phu Quoc island. From the typical sandy soil of this land, pepper species with high tensile strength and aroma are more characteristic than those grown in other regions. Pepper seeds are selected very carefully, cleaned, then packaged without extraneous."
     }
   ],
   "combo": [

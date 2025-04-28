@@ -61,7 +61,9 @@ async function renderProducts() {
         <i class="fa-solid fa-cart-plus"></i>
       </span>
       <div class="product-img">
-        <img src="${product.image}" alt="${product.name}" />
+        <a href="product-details.html?id=${product.id}">
+          <img src="${product.image}" alt="${product.name}" />
+        </a>
       </div>
       <div class="price">
         <p class="price-discount">
@@ -74,11 +76,14 @@ async function renderProducts() {
           min="1"
           value="1" />
       </div>
-      <h4 class="product-name">${product.name}</h4>
+      <a href="product-details.html?id=${product.id}">
+        <h4 class="product-name">${product.name}</h4>
+      </a>
       <button>
         <a href="#">Buy now</a>
       </button>
     `;
+    
     container.appendChild(productItem);
   });
 }
@@ -97,7 +102,9 @@ async function renderNewProducts() {
         <i class="fa-solid fa-cart-plus"></i>
       </span>
       <div class="product-img">
-        <img src="${product.image}" alt="${product.name}" />
+        <a href="product-details.html?id=${product.id}">
+          <img src="${product.image}" alt="${product.name}" />
+        </a>
       </div>
       <div class="price">
         <p class="price-discount">
@@ -110,7 +117,9 @@ async function renderNewProducts() {
           min="1"
           value="1" />
       </div>
-      <h4 class="product-name">${product.name}</h4>
+      <a href="product-details.html?id=${product.id}">
+        <h4 class="product-name">${product.name}</h4>
+      </a>
       <button>
         <a href="#">Buy now</a>
       </button>

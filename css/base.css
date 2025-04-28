@@ -316,6 +316,7 @@ hr {
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 /* General */
 
 /* Product item */
@@ -399,6 +400,7 @@ hr {
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
+    color: #000;
 }
 
 .product-item button {
@@ -564,3 +566,105 @@ td img {
 }
 
 /* Banner intro */
+
+
+/* Cart */
+#showcart {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 80px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px #ccc solid;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #999;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    border: 1px #ccc solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}
+
+#remove {
+    float: right;
+    padding: 5px 10px;
+}
+
+/* pay button  */
+#showcart .pay-btn {
+    position: absolute;
+    bottom: 10px;
+    padding: 4px 12px;
+    border-radius: 2px;
+    border: 1px solid #16a34a;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: #16a34a;
+    font-weight: 500;
+}
+
+#showcart .pay-btn:hover {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+#showcart #remove {
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 4px;
+    cursor: pointer;
+    outline: none;
+    background-color: #ef4444;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+#showcart #remove:hover {
+    background-color: #dc2626;
+}
+
+#mycart .delete-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#mycart .delete-btn i:hover {
+    color: #dc2626;
+}
+
+/* Cart */
