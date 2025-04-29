@@ -1,0 +1,145 @@
+/* Extra Small Devices (Mobile, <576px) */
+@media (max-width: 575.98px) {
+    .slider-area {
+        display: none;
+    }
+
+    .main-product-area .content {
+        width: 100%;
+    }
+
+    .products-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner2 .content h4 {
+        width: 100%;
+    }
+
+    .new-product-area .content {
+        width: 100%;
+    }
+
+    #banner3 .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #newsletter .content {
+        width: 100%;
+    }
+
+    #newsletter .newstext p {
+        padding: 20px 0;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+}
+
+/* Small Devices (≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium Devices (≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .slider-area {
+        display: none;
+    }
+
+    .main-product-area .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #banner2 .content h4 {
+        width: 100%;
+    }
+
+    .new-product-area .content {
+        width: 100%;
+    }
+
+    #banner3 .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #newsletter .content {
+        width: 100%;
+    }
+
+    #newsletter .newstext p {
+        padding: 20px 0;
+    }
+}
+
+/* Large Devices (≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .slider-area {
+        display: none;
+    }
+
+    .main-product-area .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #banner2 .content h4 {
+        width: 100%;
+    }
+
+    .new-product-area .content {
+        width: 100%;
+    }
+
+    #banner3 .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #newsletter .content {
+        width: 100%;
+    }
+
+    #newsletter .newstext p {
+        padding: 20px 0;
+    }
+}
+
+/* Extra Large Devices (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* Extra Extra Large Devices (≥1400px) */
+@media (min-width: 1400px) {}

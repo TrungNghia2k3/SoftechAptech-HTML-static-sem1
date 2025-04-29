@@ -1,3 +1,22 @@
+const toggleBtn = document.getElementById("menu-toggle");
+const canvas = document.getElementById("navbar-canvas");
+const closeBtn = document.getElementById("close-canvas");
+const overlay = document.getElementById("canvas-overlay");
+
+function openCanvas() {
+  canvas.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closeCanvas() {
+  canvas.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+toggleBtn.addEventListener("click", openCanvas);
+closeBtn.addEventListener("click", closeCanvas);
+overlay.addEventListener("click", closeCanvas);
+
 async function fetchProducts() {
   try {
     const response = await fetch("data.json");
@@ -8,31 +27,25 @@ async function fetchProducts() {
   }
 }
 
-function addToCart(productId, quantity) {
-  // Lấy cart từ localStorage
+function addToCart(productId, quantity, container = null) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  // Kiểm tra xem sản phẩm đã tồn tại chưa
   const existingProduct = cart.find((item) => item.productId === productId);
 
   if (existingProduct) {
-    // Nếu đã có thì cộng thêm số lượng
     existingProduct.quantity += quantity;
   } else {
-    // Nếu chưa có thì thêm mới
     cart.push({ productId, quantity });
   }
 
-  // Lưu lại cart vào localStorage
   localStorage.setItem("cart", JSON.stringify(cart));
-
-  // Cập nhật số lượng giỏ hàng
   updateCartNumber();
 
-  // Cập nhật lại giỏ hàng hiển thị
-  renderCartTable();
+  // Nếu có container thì render cho đúng vùng
+  if (container) {
+    renderCartTable(container);
+  }
 
-  // Gọi hàm showToast thông báo
   showToast("Product added to cart successfully!");
 }
 
@@ -51,32 +64,39 @@ function showToast(message) {
 // CẬP NHẬT SỐ LƯỢNG .cart-number
 function updateCartNumber() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartNumber = document.querySelector(".cart-number");
-  cartNumber.innerText = cart.length;
+  const cartNumberElements = document.querySelectorAll(".cart-number");
+
+  cartNumberElements.forEach((el) => {
+    el.innerText = cart.length;
+  });
 }
 
 // TOGGLE HIỂN THỊ GIỎ HÀNG
-const cartIcon = document.querySelector(".cart-icon");
-const showCartDiv = document.getElementById("showcart");
+const cartIcons = document.querySelectorAll(".cart-icon");
 
-cartIcon.addEventListener("click", () => {
-  showCartDiv.classList.toggle("active");
-  if (showCartDiv.classList.contains("active")) {
-    renderCartTable();
-  }
+cartIcons.forEach((icon) => {
+  const showCart = icon.nextElementSibling;
+
+  icon.addEventListener("click", () => {
+    showCart.classList.toggle("active");
+
+    if (showCart.classList.contains("active")) {
+      renderCartTable(showCart);
+    }
+  });
 });
 
-async function renderCartTable() {
+async function renderCartTable(container) {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const tbody = document.getElementById("mycart");
+  const tbody = container.querySelector(".mycart");
   tbody.innerHTML = "";
 
-  const allProducts = await fetchProducts(); // <- phải await
+  const allProducts = await fetchProducts();
 
   if (cart.length === 0) {
     const emptyRow = document.createElement("tr");
     emptyRow.innerHTML = `
-      <td colspan="7" style="text-align: center;">There are no products in the cart</td>
+      <td colspan="6" style="text-align: center;">There are no products in the cart</td>
     `;
     tbody.appendChild(emptyRow);
     return;
@@ -84,10 +104,7 @@ async function renderCartTable() {
 
   cart.forEach((item) => {
     const product = allProducts.find((p) => p.id === item.productId);
-
-    if (!product) {
-      return; // bỏ qua nếu không tìm thấy sản phẩm
-    }
+    if (!product) return;
 
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -96,21 +113,31 @@ async function renderCartTable() {
       <td>$${product.discountPrice}</td>
       <td>${item.quantity}</td>
       <td>$${(product.discountPrice * item.quantity).toFixed(3)}</td>
-      <td><button class="delete-from-cart" onclick="deleteFromCart(${product.id})">
-            <i class="fa-solid fa-trash"></i>
-          </button>
+      <td>
+        <button class="delete-from-cart" data-id="${product.id}">
+          <i class="fa-solid fa-trash"></i>
+        </button>
       </td>
     `;
     tbody.appendChild(row);
   });
 }
 
-function deleteFromCart(productId) {
+document.addEventListener("click", function (e) {
+  if (e.target.closest(".delete-from-cart")) {
+    const btn = e.target.closest(".delete-from-cart");
+    const productId = parseInt(btn.getAttribute("data-id"));
+    const container = btn.closest(".showcart");
+    deleteFromCart(productId, container);
+  }
+});
+
+function deleteFromCart(productId, container) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart = cart.filter((item) => item.productId !== productId);
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCartNumber();
-  renderCartTable();
+  renderCartTable(container);
 }
 
 window.addEventListener("DOMContentLoaded", () => {

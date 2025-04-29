@@ -53,7 +53,8 @@ async function renderProductDetails() {
   // Gắn sự kiện cho nút Add to Cart
   const addCartBtn = container.querySelector(".add-cart-btn");
   addCartBtn.addEventListener("click", () => {
-    addToCart(product.id, 1); // quantity mặc định là 1
+    const cartContainer = document.querySelector(".showcart");
+    addToCart(product.id, 1, cartContainer);
   });
 }
 

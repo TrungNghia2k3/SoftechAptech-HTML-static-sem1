@@ -77,7 +77,9 @@ async function renderProducts() {
       console.log("Thêm vào giỏ hàng");
       const quantityInput = productItem.querySelector("input[name='quantity']");
       const quantity = parseInt(quantityInput.value) || 1;
-      addToCart(product.id, quantity);
+
+      const container = document.querySelector(".showcart"); // nếu có nhiều, xác định đúng
+      addToCart(product.id, quantity, container);
     });
 
     container.appendChild(productItem);
@@ -125,7 +127,9 @@ async function renderNewProducts() {
       console.log("Thêm vào giỏ hàng");
       const quantityInput = productItem.querySelector("input[name='quantity']");
       const quantity = parseInt(quantityInput.value) || 1;
-      addToCart(product.id, quantity);
+
+      const container = document.querySelector(".showcart"); // nếu có nhiều, xác định đúng
+      addToCart(product.id, quantity, container);
     });
 
     container.appendChild(productItem);

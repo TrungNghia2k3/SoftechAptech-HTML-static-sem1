@@ -65,7 +65,9 @@ function renderProducts(products) {
     productItem.querySelector(".add-to-cart").addEventListener("click", () => {
       const quantityInput = productItem.querySelector("input[name='quantity']");
       const quantity = parseInt(quantityInput.value) || 1;
-      addToCart(product.id, quantity);
+
+      const container = document.querySelector(".showcart"); // nếu có nhiều, xác định đúng
+      addToCart(product.id, quantity, container);
     });
 
     productList.appendChild(productItem);

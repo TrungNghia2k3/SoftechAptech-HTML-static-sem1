@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/product-details.css" />
+  <link rel="stylesheet" href="responsive/base.responsive.css" />
+  <link rel="stylesheet" href="responsive/product-details.responsive.css" />
   <title>PN KFC</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
@@ -22,7 +24,7 @@
       <!-- Nav -->
       <div id="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="/shop.html">Shop</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/about.html">About</a></li>
@@ -32,7 +34,7 @@
               <i class="fa-solid fa-cart-shopping"></i>
               <span class="cart-number">0</span>
             </a>
-            <div id="showcart">
+            <div class="showcart">
               <table>
                 <tr>
                   <th>Image</th>
@@ -42,21 +44,60 @@
                   <th>Money</th>
                   <th>Delete </th>
                 </tr>
-                <tbody id="mycart"></tbody>
+                <tbody class="mycart"></tbody>
               </table>
               <br>
               <button class="pay-btn" href="/paycart.html">Pay</button>
             </div>
           </li>
-          <i id="close-bar" class="fa-solid fa-xmark"></i>
         </ul>
       </div>
       <div id="mobile">
-        <div id="lg-bag-2" class="cart-icon">
-          <p onclick="showcart()"><i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-number">0</span></a>
+        <ul>
+          <li>
+            <a class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-number">0</span>
+            </a>
+            <div class="showcart">
+              <table>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Money</th>
+                  <th>Delete </th>
+                </tr>
+                <tbody class="mycart"></tbody>
+              </table>
+              <br>
+              <button class="pay-btn" href="/paycart.html">Pay</button>
+            </div>
+          </li>
+          <li id="menu-toggle">
+            <i class="fa-solid fa-list-ul"></i>
+          </li>
+        </ul>
+      </div>
+      <!-- Lớp mờ bên ngoài canvas -->
+      <div id="canvas-overlay" class="hidden"></div>
+
+      <!-- Navbar Canvas -->
+      <div id="navbar-canvas">
+        <div class="header-navbar-canvas">
+          <i class="fa-solid fa-xmark" id="close-canvas"></i>
         </div>
-        <i id="bar" class="fa-solid fa-list"></i>
+        <div class="canvas-content">
+          <!-- Nội dung menu hoặc nav-link -->
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
 
       <!-- End Nav  -->
@@ -66,7 +107,6 @@
 
   <!-- Banner intro -->
   <div class="banner-intro">
-    <img src="img/about/B1.jpg" width="100%" alt="picture" />
     <div class=" banner-intro-text">
       <h1>Product Details</h1>
     </div>

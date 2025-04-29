@@ -1,0 +1,129 @@
+/* Extra Small Devices (Mobile, <576px) */
+@media (max-width: 575.98px) {
+    #contact-form .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .content form {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    form .form-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .form-img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    #contact-location {
+        padding: 50px 0;
+    }
+
+    #contact-location .content {
+        padding: 0 20px;
+    }
+
+    .reassurance .reassurance-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Small Devices (≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium Devices (≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #contact-form .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .content form {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    form .form-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .form-img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #contact-location {
+        padding: 50px 0;
+    }
+
+    #contact-location .content {
+        padding: 0 20px;
+    }
+}
+
+/* Large Devices (≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #contact-form .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .content form {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    form .form-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .form-img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #contact-location {
+        padding: 50px 0;
+    }
+
+    #contact-location .content {
+        padding: 0 20px;
+    }
+}
+
+/* Extra Large Devices (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* Extra Extra Large Devices (≥1400px) */
+@media (min-width: 1400px) {}

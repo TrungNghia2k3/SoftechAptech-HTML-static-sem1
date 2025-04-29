@@ -140,13 +140,15 @@
   height: 400px;
 }
 
-#banner2 .content h4 {
-  color: #075207c7;
-  font-size: 35px;
-}
-
 #banner2 .content h2 {
   color: #000000;
+  padding: 20px;
+
+}
+
+#banner2 .content h4 {
+  color: #075207c7;
+  width: 1200px;
   padding: 20px;
 }
 
@@ -305,8 +307,3 @@ button.banner2-button a {
 }
 
 /* End Newsletter  */
-
-
-
-
-
