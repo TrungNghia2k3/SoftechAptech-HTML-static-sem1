@@ -14,44 +14,47 @@ async function renderProductDetails() {
   const product = products.find((p) => p.id == productId); // tìm product có id khớp
 
   if (!product) {
-    document.getElementById("product-details").innerHTML =
-      "<p>Product not found!</p>";
+    document.getElementById(
+      "product-details"
+    ).innerHTML = `<div class="content"><p>Product not found!</p></div>`;
     return;
   }
 
   // Render ra HTML
   const productDetailsHTML = `
-        <div class="content">  
-            <div class="product-image">
-                <img src="${product.image}" alt="${product.name}" />
-            </div>
-            <div class="product-content">
-              
-              <div class="product-name">
-                <h3>${product.name}</h3>
-              </div>
-              
-              <div class="product-price">
-                <span class="price-discount">$${product.discountPrice}</span>
-                <span class="price-standard">$${product.originalPrice}</span>
-              </div>
-          
-              <div class="product-description">
-                <p>${product.description}</p>
-              </div>
-
-              <div class="btn-groups">
-                <button class="add-cart-btn" >
-                  <i class="fas fa-shopping-cart"></i>
-                  Add to cart
-                </button>
-              </div>
-
-            </div>
+  <div class="content">  
+      <div class="product-image">
+          <img src="${product.image}" alt="${product.name}" />
+      </div>
+      <div class="product-content">
+        <div class="product-name">
+          <h3>${product.name}</h3>
         </div>
-  `;
+        <div class="product-price">
+          <span class="price-discount">$${product.discountPrice}</span>
+          <span class="price-standard">$${product.originalPrice}</span>
+        </div>
+        <div class="product-description">
+          <p>${product.description}</p>
+        </div>
+        <div class="btn-groups">
+          <button class="add-cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            Add to cart
+          </button>
+        </div>
+      </div>
+  </div>
+`;
 
-  document.getElementById("product-details").innerHTML = productDetailsHTML;
+  const container = document.getElementById("product-details");
+  container.innerHTML = productDetailsHTML;
+
+  // Gắn sự kiện cho nút Add to Cart
+  const addCartBtn = container.querySelector(".add-cart-btn");
+  addCartBtn.addEventListener("click", () => {
+    addToCart(product.id, 1); // quantity mặc định là 1
+  });
 }
 
 // 4. Gọi hàm khi load trang
